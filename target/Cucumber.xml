@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="59.228">
+    <testcase classname="Alert test functionality" name="User open and close all modal wind." time="15.611">
+        <system-out><![CDATA[Given WedPage is Open.......................................................passed
+When User Click Button to see alert.........................................passed
+Then User click alert will appear after  seconds............................passed
+And User click confirm box will appear......................................passed
+Then User click prompt box will appear......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Autocomplete in empty fields" name="User send valid data in empty fields" time="4.322">
+        <system-out><![CDATA[Given WebSite is open.......................................................passed
+When user send her Moldova StefanCelMare celMareSiSfint data in empty field.passed
+Then user send another data Chisinau and State and MD-4820 and Moldova......passed
+And user send enter.........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Windows test functionality" name="User open tab ,window,window message" time="8.018">
+        <system-out><![CDATA[Given User open page........................................................passed
+When User click new tab.....................................................passed
+Then User click new window..................................................passed
+And user click new window message...........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test button functionality" name="User click buttons" time="8.624">
+        <system-out><![CDATA[Given User Open Web Site....................................................passed
+When User send double click.................................................passed
+Then User send rigth click..................................................passed
+And User send click.........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Modal windows test functionality" name="User  open modal window" time="15.398">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#closeSmallModal&quot;}&#10;  (Session info: chrome=98.0.4758.102)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'DESKTOP-QJ34I7V', ip: '192.168.100.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [4dedc096d9c9d3036f234f51a7aa57b2, findElement {using=id, value=closeSmallModal}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\DONNIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58697}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58697/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4dedc096d9c9d3036f234f51a7aa57b2" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User click window.....................................................passed
+And User close window.......................................................passed
+Then User open second window................................................passed
+And User close window.......................................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#closeSmallModal"}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-QJ34I7V', ip: '192.168.100.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4dedc096d9c9d3036f234f51a7aa57b2, findElement {using=id, value=closeSmallModal}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\DONNIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58697}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58697/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4dedc096d9c9d3036f234f51a7aa57b2
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at POM_PF.ModalDialPOM_PF.closeSmallWindows(ModalDialPOM_PF.java:49)
+	at StepsDefinitions.ModalDialSteps.user_close_window(ModalDialSteps.java:36)
+	at ✽.User close window(file:///C:/Users/Don%20Nikitos/Desktop/TestForCV/src/test/java/Features/ModalDial.feature:6)
+]]></failure>
+    </testcase>
+    <testcase classname="Validation test" name="User send full name ,address ,email , permanent address" time="6.534">
+        <system-out><![CDATA[Given WebSite demoqa.com/text-box is open...................................passed
+When sends iaroslav and regaman101@gmail.com and Chisinau and Chisinau......passed
+Then user push submit.......................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
